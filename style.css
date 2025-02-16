@@ -466,8 +466,8 @@ h3 {
     .partner__text{
         font-size: 16px;
     }
-    .emoji, .emoji.selected{
-        font-size: 30px;
+    .emoji-rating i{
+        font-size: 25px;
     }
     .partner__logo{
     max-width: 80%;
