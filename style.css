@@ -344,6 +344,9 @@ h3 {
     .metric__card{
         width: 25%;
     }
+    .metric__card i {
+        font-size: 1.2rem; 
+        }
     .metric__icon {
         font-size: 1.5rem;
         margin-bottom: 0.3rem;
