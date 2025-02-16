@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ab4e0b129.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="barChart.js"></script>
+    <script src="pieChart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <title>Muslim Ad Network Report</title>
+</head>
+
+<body>
+    <main class="main">
+        <!-- Header Elements -->
+        <div class="header">
+ 
+            <div class="header__container">
+                <!-- Right Image Pattern -->
+                <img src="assets/patternRight.png" alt="" class="pattern__right">
+
+                <!-- Middle of Header: Logo, Text, & Date -->
+                <div class="logo__container">
+                    <img src="assets/logo.jpeg" alt="" class="logo">
+                    <h1 class="report__title">Muslim Ad Network Report</h1>
+                    <div class="date__container">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span class="date__text"> 12 Dec - 12 Jan</span>
+                    </div>
+                </div>
+                <!-- Left Image Pattern -->
+                <img src="assets/patternLeft.png" alt="" class="pattern__left">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Campain Pacing and Parnter Section -->
+        <div class="info__container">
+
+            <div class="pacing__box">
+                <h4 class="campaign__text">CAMPAIGN PACING</h4>
+                <div class="emoji-rating">
+                    <i class="fa-solid fa-face-frown"></i>
+                    <i class="fa-solid fa-face-frown-open"></i>
+                    <i class="fa-solid fa-face-meh"></i>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <i class="fa-solid fa-face-laugh-beam"></i>
+                </div>
+            </div>
+
+            <div class="partner__box">
+                <h4 class="partner__text">PARTNER</h4>
+                <img class="partner__logo" src="assets/birrLogo.png" alt="Birr Necessities Logo">
+            </div>
+
+        </div>
+
+        <!-- Metrics Containers -->
+        <div class="metrics__container">
+            <!-- Impressions Card -->
+            <div class="metric__card card__impressions">
+                <!-- <div class="metric__icon">👁️</div> -->
+                <i class="fa-regular fa-eye"></i>
+                <div class="metric__value">66,553</div>
+                <div class="metric__label">Impressions</div>
+            </div>
+            <!-- Conversions Card -->
+            <div class="metric__card card__conversions">
+                <!-- <div class="metric__icon">🔄</div> -->
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <div class="metric__value">13</div>
+                <div class="metric__label">Conversions</div>
+            </div>
+            <!-- Clicks Card -->
+            <div class="metric__card card__clicks">
+                <!-- <div class="metric__icon">🖱️</div> -->
+                <i class="fa-solid fa-computer-mouse"></i>
+                <div class="metric__value">23</div>
+                <div class="metric__label">Clicks</div>
+            </div>
+            <!-- CTR Card -->
+            <div class="metric__card card__ctr">
+                <!-- <div class="metric__icon">📈</div> -->
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="metric__value">0.03%</div>
+                <div class="metric__label">CTR</div>
+            </div>
+            <!-- Muslims Reached Card -->
+            <div class="metric__card card__reach">
+                <!-- <div class="metric__icon">👥</div> -->
+                <i class="fa-solid fa-people-group"></i>
+                <div class="metric__value">16,638</div>
+                <div class="metric__label">Muslims Reached</div>
+            </div>
+            <!-- Revenue Card -->
+            <div class="metric__card card__revenue">
+                <i class="fa-solid fa-sack-dollar"></i>
+                <div class="metric__value">$457.41</div>
+                <div class="metric__label">Revenue</div>
+            </div>
+
+        </div>
+
+        <!-- Bar Charts -->
+        <div class="barcharts__container">
+            <!-- Chart 1 -->
+            <div class="chart">
+                <h3>Top Websites & Apps Per Impressions</h3>
+                <div class="bar__chart" id="chart__impressions"></div>
+            </div>
+            <!-- Chart 2 -->
+            <div class="chart">
+                <h3>Top Websites & Apps Per Clicks</h3>
+                <div class="bar__chart" id="chart__clicks"></div>
+            </div>
+        </div>
+        <script src="barChart.js"></script>
+
+
+
+        <!-- Pie Chart -->
+
+        <div class="chart__container">
+            <h3 class="piechart__text">Impressions & Clicks Per Device Type</h3>
+            <!-- Chart -->
+            <div class="piechart">
+                <canvas id="deviceChart"></canvas>
+            </div>
+            <script src="pieChart.js"></script>
+
+            <!-- Pie Chart Labels -->
+            <div class="info">
+                <!-- Smartphone Label-->
+                <div class="info__item">
+                    <div class="icon__bar__chart" style="background-color: #1f649980;">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                    <div class="details">
+                        <p class="percentage">88.1%</p>
+                        <p class="device__type">Smart Phone</p>
+                    </div>
+                </div>
+                <!-- Desktop Label-->
+                <div class="info__item">
+                    <div class="icon__bar__chart" style="background-color: #aeb90f59;">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <div class="details">
+                        <p class="percentage">10.5%</p>
+                        <p class="device__type">Desktop</p>
+                    </div>
+                </div>
+                <!-- Tablet Label-->
+                <div class="info__item">
+                    <div class="icon__bar__chart" style="background-color: #56565648;">
+                        <i class="fa-solid fa-tablet"></i>
+                    </div>
+                    <div class="details">
+                        <p class="percentage">1.4%</p>
+                        <p class="device__type">Tablet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>

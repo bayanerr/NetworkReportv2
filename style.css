@@ -1,0 +1,522 @@
+/* Universal Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #fff;
+}
+
+.main{
+    margin: 0px 20%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 400px;
+    background-color: #fff;
+    z-index: 2;
+    overflow: visible;
+
+}
+
+.logo__container {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 64px;
+    width: 300px;
+    height: auto;
+}
+
+.pattern__left,
+.pattern__right {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    /* background-repeat: no-repeat; */
+
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.pattern__left {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.pattern__right {
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.report__title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-top: 20px;
+    z-index: 2;
+
+}
+
+.date__container {
+    display: inline;
+    gap: 8px;
+    align-items: center;
+    background: linear-gradient(1deg, #faf9f910, #f9f6f600);
+    background-color: #eee;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+/* Emoji and Partner Box Containers */
+.info__container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 64px;
+
+    
+}
+
+.pacing__box,
+.partner__box {
+    z-index: 2;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    padding-bottom: 15px;
+    background: rgb(255, 255, 255); 
+
+}
+
+.emoji-rating {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    z-index: 2;
+
+}
+
+.emoji-rating i:nth-child(-n+4) {
+    opacity: 0.3; 
+}
+.emoji-rating i{
+    font-size: 40px;
+    color: #1f6499;
+}
+
+
+.emoji.selected {
+    z-index: 2;
+    opacity: 1;
+}
+
+.campaign__text,
+.partner__text {
+    z-index: 2;
+    font-size: 20px;
+}
+
+.partner__logo {
+    z-index: 2;
+    width: 50%;
+    height: auto;
+}
+
+
+
+/* Metric Cards Section */
+.metrics__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 32px;
+}
+
+.metric__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    z-index: 2;
+
+}
+
+.metric__card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: rgba(0, 0, 0, 0.66); /* Icon color */
+    background: linear-gradient(125deg, #1f6499a7, #aeb90f98); 
+    border-radius: 20%;
+    padding: 0.5rem; /* Space around the icon inside the box */
+    display: inline-flex; /* Ensure the icon stays centered in the background */
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+}
+.metric__value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.metric__label {
+    font-size: .8rem;
+    font-weight: bold;
+    color: #6c757d;
+}
+
+.card__impressions {
+    background-color: #9b9b9b31;
+}
+.card__conversions {
+    background-color: #1f649909;
+}
+.card__clicks {
+    background-color: #aeb90f17;
+}
+.card__ctr {
+    background-color: #9b9b9b15;
+}
+.card__reach {
+    background-color: #1f649916;
+}
+.card__revenue {
+    background-color: #aeb90f3e;
+}
+
+
+/* Bar Charts Section */
+.barcharts__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.chart {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 95%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    z-index: 2;
+}
+
+h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bar__chart {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 5px 10px;
+    align-items: center;
+}
+
+.bar {
+    height: 24px;
+    background-color: #1f6499;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.bar__label,
+.bar__value {
+    font-size: 20px;
+    color: #333;
+    text-align: right;
+}
+
+
+/* Pie Chart Section */
+.chart__container {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
+    margin-top: 30px;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon__bar__chart {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.details .percentage {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.details .device-type {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+
+
+/* Multiple Screen Sizes Formats */
+@media (max-width: 1368px){
+    /* Pie Chart Adjustments */
+    .info {
+        flex-wrap: wrap;
+        flex-direction: column;
+    } 
+    .barcharts__container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bar__label, .bar__value{
+        font-size: 16px;
+    }
+    .bar{
+        height: 25px;
+    } 
+     /* Metrics Cards Adjustments */
+    .metrics__container {
+        flex-wrap: wrap;
+    }
+    .metric__card{
+        width: 25%;
+    }
+    .metric__icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .metric__value {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.1rem;
+    }
+    .metric__label {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #6c757d;
+    }
+    
+    .chart__container {
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 1024px) {
+    /* Header Design Adjustments */
+    .pattern__left,
+    .pattern__right {
+        width: 25%;
+        opacity: .6;
+    }
+    /* Pacing/Parner Box Adjustments */
+    .info__container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+   
+
+    /* Campain Pacing/Partner Adjustments */
+    .campaign__text,
+    .partner__text{
+        font-size: 18px;
+    }
+    .emoji, .emoji.selected{
+        font-size: 30px;
+    }
+    .partner__logo{
+    max-width: 80%;
+    }
+
+    .metric__card{
+        width: 22%;
+    }
+    
+
+}
+
+@media (max-width: 768px) {
+    /* Top Design Adjustments */
+    .pattern__left,
+    .pattern__right {
+        width: 20%;
+        opacity: .3;
+    }
+    .metrics__container{
+        gap: 15px;
+    }
+    .metric__card{
+        width: 20%;
+    }
+    .report__title{
+        font-size: 30px;
+    }
+    .date__container{
+        font-size: 20px;
+    }
+    .info__container,
+    .pacing__box,
+    .partner__box{
+        margin-top: 10px;
+    }
+    .metric__card{
+        width: 36%;
+    }
+    
+
+}
+
+@media (max-width: 600px) {
+    /* Top Design Adjustments */
+    .pattern__left,
+    .pattern__right {
+        width: 15%;
+        opacity: 0.3;
+    }
+   
+    
+
+
+}
+
+@media (max-width: 480px) {
+    /* Header Adjustments */
+    .pattern__right,
+    .pattern__left {
+        display: none;
+    }
+    .logo{
+        width: 250px;
+        padding-top: 0px;
+    }
+    .report__title{
+        font-size: 20px;
+    }
+    .date__container{
+        font-size: 16px;
+    }
+    /* Campain Pacing/Partner Adjustments */
+    .campaign__text,
+    .partner__text{
+        font-size: 16px;
+    }
+    .emoji, .emoji.selected{
+        font-size: 30px;
+    }
+    .partner__logo{
+    max-width: 80%;
+    }
+    .info__container,
+    .pacing__box,
+    .partner__box{
+        margin-top: 0px;
+    }
+
+    /* Metrics Adjustments */
+    .metric__icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+    .metric__value {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 0.1rem;
+    }
+    .metric__label {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #6c757d;
+    }
+    .metric__card{
+        height: 120px;
+        width: 32%;
+    }
+
+    /* Bar Charts Adjustments */
+    h3{
+        font-size: 12px
+    }
+    .bar__label,
+    .bar__value {
+        font-size: 8px;
+    }
+    .bar{
+        height: 25px;
+        
+    }
+
+    /* Pie Charts adjustments */
+    .chart__container {
+        flex-direction: column;    
+    }
+    .info{
+        flex-direction: column;
+    }
+
+}
